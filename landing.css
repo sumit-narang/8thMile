@@ -1,0 +1,89 @@
+.nav-items > li > a:hover{
+	border-bottom: 1px solid yellow;
+}
+
+.landing-section, .landing-img{
+	height: 100vh;
+	height: 100%;
+	width: auto;
+	color: white;
+}
+
+.landing-section > header, .landing-motto, .landing-bottom{
+	position: absolute;
+}
+
+.landing-section > header{
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	height: 70px;
+}
+
+.logo a{
+	font-size: 20px;
+}
+
+.landing-section > header > ul > li{
+	display: inline-block;
+}
+
+ul > li > a{
+	color: white;
+	margin: 5px;
+}
+.landing-motto{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing-bottom{
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: black;
+	color: white;
+	display: flex;
+	box-sizing: border-box;
+	padding: 0 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.register > button{	
+    background: rgba(72, 226, 135, 0.74);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.register > button:hover{
+	background: rgb(72, 226, 135);
+	cursor: pointer;
+}
+
+.typewriter{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 75px;
+	color: #f3f74a;
+}
+.landing-motto:hover{
+    transition: transform 0.3s linear;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8th mile</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="landing.css">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+<body>
+	<div class="landing-section">
+		<header>
+			<ul class="logo">
+				<li><img src="../images/31.png"></li>
+				<li><a href="">8<sup>th</sup>Mile</a></li>
+			</ul>
+			<ul class="nav-items">
+				<li><a href="">HOME</a></li>
+				<li><a href="">EVENTS</a></li>
+				<li><a href="">PROSHOWS</a></li>
+				<li><a href="">SPONSORS</a></li>
+				<li><a href="">CONTACT US</a></li>
+			</ul>
+		</header>
+		<div class="landing-window" style="position: absolute;top: 0;width: 100%;height: 100vh;background: url('../images/landing page.jpg');"></div>
+		<!-- <div class="landing-img">
+			<img src="../images/landing page.jpg" width="100%">
+		</div> -->
+		<div class="landing-motto typewriter">Life In Technicolor</div>
+		<div class="landing-bottom">
+			<div class="dates">
+				<p>25,26,27 MARCH 2017</p>
+			</div>
+			<div class="register">
+				Register For Events <button>Grab Tickets</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		var text = $('.typewriter').text();
+		var length = text.length;
+		var timeOut;
+		var character = 0;
+
+
+		(function typeWriter() { 
+		    timeOut = setTimeout(function() {
+		        character++;
+		        var type = text.substring(0, character);
+		        $('.typewriter').text(type);
+		        typeWriter();
+		        
+		        if (character == length) {
+		            clearTimeout(timeOut);
+		        }
+		        
+		    }, 100);
+		}());
+	</script>
+	<script type="text/javascript">
+		/*$(document).ready(function() {
+			$( ".landing-motto" ).mousemove(function(e) {
+	            var x = e.clientX;
+	            var y = e.clientY;
+	            console.log(x);
+	            console.log(y);
+	            $('.landing-motto').css({"-webkit-transform":"translate("+(x*0.03)+"px,"+(y*0.02)+"px)"});
+        	});
+		});*/
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.landing-window').on('mousemove',function(e){
+				var x = e.clientX;
+	            var y = e.clientY;
+	            console.log(x);
+	            console.log(y);
+	            $('.landing-motto').css({"-webkit-transform":"translate("+(x*0.03)+"px,"+(y*0.02)+"px)"});
+        	});
+		});
+	</script>
+</body>
+</html>
